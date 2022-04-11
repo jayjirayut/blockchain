@@ -19,7 +19,6 @@ The blockchain is validated by checking the hashes of each block.
     The hashes of each block are calculated by hashing the previous block's hash.
 """
 
-
 import hashlib  # Used to calculate the hash of a block.
 import json  # Used to convert the block into a string.
 from time import time  # Used to calculate the time of a block.
@@ -46,7 +45,8 @@ class Blockchain:
         self.nodes = set()
 
         # Create the genesis block
-        self.new_block(previous_hash=1, proof=100)
+        self.new_block(previous_hash=1, proof=100)  # Genesis block is the first block in the chain. It has no
+        # previous block. It has no transactions. It has a proof of 100. It has a hash of 1. It has a timestamp of 0.
 
     def register_node(self, address):
         """
@@ -55,7 +55,7 @@ class Blockchain:
         param address: Address of node.
         :return: None
         """
-        parsed_url = urlparse(address)
+        parsed_url = urlparse(address)  # Parse the address into a URL object.
         self.nodes.add(parsed_url.netloc)
 
     def valid_chain(self, chain):
@@ -122,17 +122,18 @@ class Blockchain:
 
     def new_block(self, proof, previous_hash=None):
         """
-        Create a new Block in the Blockchain.
+        Create a new Block in the Blockchain. The block contains the transactions and the proof of work. The proof of
+        work is the number of leading zeros in the hash of the previous block.
 
         param proof: The proof given by the Proof of Work algorithm.
         param previous_hash: Hash of previous Block.
         :return: New Block.
         """
         block = {
-            'index': len(self.chain) + 1,
-            'timestamp': time(),
-            'transactions': self.current_transactions,
-            'proof': proof,
+            'index': len(self.chain) + 1,  # Index of the block, the number of blocks in the chain. Starts at 1.
+            'timestamp': time(),  # Timestamp of the block.
+            'transactions': self.current_transactions,  # List of transactions.
+            'proof': proof,  # Proof of work.
             'previous_hash': previous_hash or self.hash(self.chain[-1]),
         }
 
