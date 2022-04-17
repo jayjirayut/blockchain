@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>app API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>app</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">from argparse import ArgumentParser
+from uuid import uuid4
+
+from flask import Flask, jsonify, request
+
+from blockchain import Blockchain
+
+app = Flask(__name__)  # Instantiate the Node
+node_identifier = str(uuid4()).replace(&#39;-&#39;, &#39;&#39;)  # Generate a globally unique address for this node
+blockchain = Blockchain()
+
+
+@app.route(&#39;/mine&#39;, methods=[&#39;GET&#39;])  # This route is called by the miner when they want to mine a new block.
+def mine() -&gt; tuple:
+    &#34;&#34;&#34; Mine a new block.
+
+    This function does the following:
+        1. Gets the last block from the chain.
+        2. Get the proof of work for the last block.
+        3. Create a new block with the proof of work.
+        4. Add the new block to the chain.
+        5. Broadcast the new block to all other nodes.
+
+    Returns: The proof of work for the new block.
+        The miner will then use this proof of work to find the hash of the previous block. This hash will be used to
+        create the new block. The miner will then send this hash to the node that will verify the hash.
+    &#34;&#34;&#34;
+    # We run the proof of work algorithm to get the next proof...
+    last_block = blockchain.last_block
+    proof = blockchain.proof_of_work(last_block)
+
+    # We must receive a reward for finding the proof.
+    # The sender is &#34;0&#34; to signify that this node has mined a new coin.
+    blockchain.new_transaction(
+        sender=&#34;0&#34;,
+        recipient=node_identifier,  # The miner&#39;s address will be the recipient of the coin.
+        amount=1,  # Reward for mining a new coin.
+    )
+
+    # Forge the new Block by adding it to the chain
+    previous_hash = blockchain.hash(last_block)
+    block = blockchain.new_block(proof, previous_hash)
+
+    response = {
+        &#39;message&#39;: &#34;New Block Forged&#34;,
+        &#39;index&#39;: block[&#39;index&#39;],
+        &#39;transactions&#39;: block[&#39;transactions&#39;],
+        &#39;proof&#39;: block[&#39;proof&#39;],
+        &#39;previous_hash&#39;: block[&#39;previous_hash&#39;],
+    }
+    return jsonify(response), 200
+
+
+@app.route(&#39;/transactions/new&#39;, methods=[&#39;POST&#39;])
+def new_transaction() -&gt; tuple:
+    &#34;&#34;&#34; Add a new transaction to the blockchain.
+            This route is called by the miner when they want to add a new transaction to the blockchain. The miner will
+            send the transaction to the node that will add it to the chain.
+
+    This function does the following:
+        1. Get the data from the request.
+        2. Check that the data is valid.
+        3. Add the transaction to the list of transactions.
+        4. Return a response with the index of the new transaction.
+
+    Returns:
+        The index of the new transaction.
+    &#34;&#34;&#34;
+    values = request.get_json()
+
+    # Check that the required fields are in the POST&#39;ed data. If not, return a 400 Bad Request.
+    required = [&#39;sender&#39;, &#39;recipient&#39;, &#39;amount&#39;]
+    if not all(k in values for k in required):
+        return &#39;Missing values&#39;, 400
+
+    # Create a new Transaction and add it to the list of transactions.
+    index = blockchain.new_transaction(values[&#39;sender&#39;], values[&#39;recipient&#39;], values[&#39;amount&#39;])
+
+    response = {&#39;message&#39;: f&#39;Transaction will be added to Block {index}&#39;}
+    return jsonify(response), 201  # 201 Created
+
+
+@app.route(&#39;/chain&#39;, methods=[&#39;GET&#39;])
+def full_chain() -&gt; tuple:
+    &#34;&#34;&#34; Get the full chain.
+            This route is called by the miner when they want to get the full chain. The miner will send this request to
+            the node that will send the chain to the miner.  The miner will then send the chain to the node that will
+            verify the chain.
+
+    This function does the following:
+        1. Get the chain.
+        2. Return the chain.
+
+    Returns:
+        The chain.
+    &#34;&#34;&#34;
+    response = {
+        &#39;chain&#39;: blockchain.chain,
+        &#39;length&#39;: len(blockchain.chain),
+    }
+    return jsonify(response), 200
+
+
+@app.route(&#39;/nodes/register&#39;, methods=[&#39;POST&#39;])
+def register_nodes() -&gt; tuple:
+    &#34;&#34;&#34; Register a new node.
+            This route is called by the miner when they want to register a new node. The miner will send the node to
+            the node that will add it to the list of nodes.
+
+    This function does the following:
+        1. Get the data from the request.
+        2. Check that the data is valid.
+        3. Add the node to the list of nodes.
+        4. Return a response with the list of nodes.
+
+    Returns:
+        The list of nodes.
+    &#34;&#34;&#34;
+    values = request.get_json()
+
+    nodes = values.get(&#39;nodes&#39;)
+    if nodes is None:
+        return &#34;Error: Please supply a valid list of nodes&#34;, 400
+
+    for node in nodes:
+        blockchain.register_node(node)
+
+    response = {
+        &#39;message&#39;: &#39;New nodes have been added&#39;,
+        &#39;total_nodes&#39;: list(blockchain.nodes),
+    }
+    return jsonify(response), 201
+
+
+@app.route(&#39;/nodes/resolve&#39;, methods=[&#39;GET&#39;])
+def consensus() -&gt; tuple:
+    &#34;&#34;&#34; Resolve conflicts.
+
+    This function does the following:
+        1. Call the consensus function to resolve conflicts.
+        2. Return a response with the chain.
+
+    Returns:
+        The chain.
+    &#34;&#34;&#34;
+    replaced = blockchain.resolve_conflicts()  # Returns True if replaced, then the chain is replaced.
+
+    if replaced:  # If the chain was replaced, return the new chain.
+        response = {
+            &#39;message&#39;: &#39;Our chain was replaced&#39;,
+            &#39;new_chain&#39;: blockchain.chain
+        }
+    else:  # Otherwise, return the old chain.
+        response = {
+            &#39;message&#39;: &#39;Our chain is authoritative&#39;,
+            &#39;chain&#39;: blockchain.chain
+        }
+
+    return jsonify(response), 200
+
+
+if __name__ == &#39;__main__&#39;:
+    parser = ArgumentParser()  # Create a parser object. This is used to parse the command line arguments.
+    parser.add_argument(&#39;-p&#39;, &#39;--port&#39;, default=5000, type=int, help=&#39;port to listen on&#39;)
+    args = parser.parse_args()  # Parse the arguments. This returns an object with the arguments as attributes.
+    port = args.port  # Get the port from the arguments. This is the port that the node will listen on.
+
+    app.run(port=port)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="app.consensus"><code class="name flex">
+<span>def <span class="ident">consensus</span></span>(<span>) ‑> tuple</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Resolve conflicts.</p>
+<p>This function does the following:
+1. Call the consensus function to resolve conflicts.
+2. Return a response with the chain.</p>
+<h2 id="returns">Returns</h2>
+<p>The chain.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.route(&#39;/nodes/resolve&#39;, methods=[&#39;GET&#39;])
+def consensus() -&gt; tuple:
+    &#34;&#34;&#34; Resolve conflicts.
+
+    This function does the following:
+        1. Call the consensus function to resolve conflicts.
+        2. Return a response with the chain.
+
+    Returns:
+        The chain.
+    &#34;&#34;&#34;
+    replaced = blockchain.resolve_conflicts()  # Returns True if replaced, then the chain is replaced.
+
+    if replaced:  # If the chain was replaced, return the new chain.
+        response = {
+            &#39;message&#39;: &#39;Our chain was replaced&#39;,
+            &#39;new_chain&#39;: blockchain.chain
+        }
+    else:  # Otherwise, return the old chain.
+        response = {
+            &#39;message&#39;: &#39;Our chain is authoritative&#39;,
+            &#39;chain&#39;: blockchain.chain
+        }
+
+    return jsonify(response), 200</code></pre>
+</details>
+</dd>
+<dt id="app.full_chain"><code class="name flex">
+<span>def <span class="ident">full_chain</span></span>(<span>) ‑> tuple</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Get the full chain.
+This route is called by the miner when they want to get the full chain. The miner will send this request to
+the node that will send the chain to the miner.
+The miner will then send the chain to the node that will
+verify the chain.</p>
+<p>This function does the following:
+1. Get the chain.
+2. Return the chain.</p>
+<h2 id="returns">Returns</h2>
+<p>The chain.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.route(&#39;/chain&#39;, methods=[&#39;GET&#39;])
+def full_chain() -&gt; tuple:
+    &#34;&#34;&#34; Get the full chain.
+            This route is called by the miner when they want to get the full chain. The miner will send this request to
+            the node that will send the chain to the miner.  The miner will then send the chain to the node that will
+            verify the chain.
+
+    This function does the following:
+        1. Get the chain.
+        2. Return the chain.
+
+    Returns:
+        The chain.
+    &#34;&#34;&#34;
+    response = {
+        &#39;chain&#39;: blockchain.chain,
+        &#39;length&#39;: len(blockchain.chain),
+    }
+    return jsonify(response), 200</code></pre>
+</details>
+</dd>
+<dt id="app.mine"><code class="name flex">
+<span>def <span class="ident">mine</span></span>(<span>) ‑> tuple</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Mine a new block.</p>
+<p>This function does the following:
+1. Gets the last block from the chain.
+2. Get the proof of work for the last block.
+3. Create a new block with the proof of work.
+4. Add the new block to the chain.
+5. Broadcast the new block to all other nodes.</p>
+<p>Returns: The proof of work for the new block.
+The miner will then use this proof of work to find the hash of the previous block. This hash will be used to
+create the new block. The miner will then send this hash to the node that will verify the hash.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.route(&#39;/mine&#39;, methods=[&#39;GET&#39;])  # This route is called by the miner when they want to mine a new block.
+def mine() -&gt; tuple:
+    &#34;&#34;&#34; Mine a new block.
+
+    This function does the following:
+        1. Gets the last block from the chain.
+        2. Get the proof of work for the last block.
+        3. Create a new block with the proof of work.
+        4. Add the new block to the chain.
+        5. Broadcast the new block to all other nodes.
+
+    Returns: The proof of work for the new block.
+        The miner will then use this proof of work to find the hash of the previous block. This hash will be used to
+        create the new block. The miner will then send this hash to the node that will verify the hash.
+    &#34;&#34;&#34;
+    # We run the proof of work algorithm to get the next proof...
+    last_block = blockchain.last_block
+    proof = blockchain.proof_of_work(last_block)
+
+    # We must receive a reward for finding the proof.
+    # The sender is &#34;0&#34; to signify that this node has mined a new coin.
+    blockchain.new_transaction(
+        sender=&#34;0&#34;,
+        recipient=node_identifier,  # The miner&#39;s address will be the recipient of the coin.
+        amount=1,  # Reward for mining a new coin.
+    )
+
+    # Forge the new Block by adding it to the chain
+    previous_hash = blockchain.hash(last_block)
+    block = blockchain.new_block(proof, previous_hash)
+
+    response = {
+        &#39;message&#39;: &#34;New Block Forged&#34;,
+        &#39;index&#39;: block[&#39;index&#39;],
+        &#39;transactions&#39;: block[&#39;transactions&#39;],
+        &#39;proof&#39;: block[&#39;proof&#39;],
+        &#39;previous_hash&#39;: block[&#39;previous_hash&#39;],
+    }
+    return jsonify(response), 200</code></pre>
+</details>
+</dd>
+<dt id="app.new_transaction"><code class="name flex">
+<span>def <span class="ident">new_transaction</span></span>(<span>) ‑> tuple</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Add a new transaction to the blockchain.
+This route is called by the miner when they want to add a new transaction to the blockchain. The miner will
+send the transaction to the node that will add it to the chain.</p>
+<p>This function does the following:
+1. Get the data from the request.
+2. Check that the data is valid.
+3. Add the transaction to the list of transactions.
+4. Return a response with the index of the new transaction.</p>
+<h2 id="returns">Returns</h2>
+<p>The index of the new transaction.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.route(&#39;/transactions/new&#39;, methods=[&#39;POST&#39;])
+def new_transaction() -&gt; tuple:
+    &#34;&#34;&#34; Add a new transaction to the blockchain.
+            This route is called by the miner when they want to add a new transaction to the blockchain. The miner will
+            send the transaction to the node that will add it to the chain.
+
+    This function does the following:
+        1. Get the data from the request.
+        2. Check that the data is valid.
+        3. Add the transaction to the list of transactions.
+        4. Return a response with the index of the new transaction.
+
+    Returns:
+        The index of the new transaction.
+    &#34;&#34;&#34;
+    values = request.get_json()
+
+    # Check that the required fields are in the POST&#39;ed data. If not, return a 400 Bad Request.
+    required = [&#39;sender&#39;, &#39;recipient&#39;, &#39;amount&#39;]
+    if not all(k in values for k in required):
+        return &#39;Missing values&#39;, 400
+
+    # Create a new Transaction and add it to the list of transactions.
+    index = blockchain.new_transaction(values[&#39;sender&#39;], values[&#39;recipient&#39;], values[&#39;amount&#39;])
+
+    response = {&#39;message&#39;: f&#39;Transaction will be added to Block {index}&#39;}
+    return jsonify(response), 201  # 201 Created</code></pre>
+</details>
+</dd>
+<dt id="app.register_nodes"><code class="name flex">
+<span>def <span class="ident">register_nodes</span></span>(<span>) ‑> tuple</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Register a new node.
+This route is called by the miner when they want to register a new node. The miner will send the node to
+the node that will add it to the list of nodes.</p>
+<p>This function does the following:
+1. Get the data from the request.
+2. Check that the data is valid.
+3. Add the node to the list of nodes.
+4. Return a response with the list of nodes.</p>
+<h2 id="returns">Returns</h2>
+<p>The list of nodes.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.route(&#39;/nodes/register&#39;, methods=[&#39;POST&#39;])
+def register_nodes() -&gt; tuple:
+    &#34;&#34;&#34; Register a new node.
+            This route is called by the miner when they want to register a new node. The miner will send the node to
+            the node that will add it to the list of nodes.
+
+    This function does the following:
+        1. Get the data from the request.
+        2. Check that the data is valid.
+        3. Add the node to the list of nodes.
+        4. Return a response with the list of nodes.
+
+    Returns:
+        The list of nodes.
+    &#34;&#34;&#34;
+    values = request.get_json()
+
+    nodes = values.get(&#39;nodes&#39;)
+    if nodes is None:
+        return &#34;Error: Please supply a valid list of nodes&#34;, 400
+
+    for node in nodes:
+        blockchain.register_node(node)
+
+    response = {
+        &#39;message&#39;: &#39;New nodes have been added&#39;,
+        &#39;total_nodes&#39;: list(blockchain.nodes),
+    }
+    return jsonify(response), 201</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="app.consensus" href="#app.consensus">consensus</a></code></li>
+<li><code><a title="app.full_chain" href="#app.full_chain">full_chain</a></code></li>
+<li><code><a title="app.mine" href="#app.mine">mine</a></code></li>
+<li><code><a title="app.new_transaction" href="#app.new_transaction">new_transaction</a></code></li>
+<li><code><a title="app.register_nodes" href="#app.register_nodes">register_nodes</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
