@@ -1,34 +1,36 @@
-### Blockchain
+### Blockchain: An Introduction
+Welcome to my blockchain project! I created this project as a way to learn about the technology behind blockchain and gain a better understanding of how it works. Although I am not a professional blockchain developer, I am passionate about its potential to change the way we conduct transactions and manage data.
 
-I create this project to learn about blockchain technology. I am not a professional blockchain developer, but I am a
-blockchain enthusiast.
+---
+#### What is Blockchain?
+Blockchain is a distributed ledger technology that records transactions across a network of computers. The ledger is public and can be accessed by anyone with an internet connection. Each block in the chain contains a record of multiple transactions and is connected to the previous block through cryptographic hashes, creating a secure and tamper-proof record of all transactions.
 
-### What is blockchain?
-The blockchain is a distributed ledger that records transactions. The blockchain is a public ledger that is distributed
-across the internet.
+#### Cryptocurrency and Blockchain
+Cryptocurrency is a digital asset that is stored on a blockchain. Bitcoin, the first and most well-known cryptocurrency, was created in 2009 as a decentralized digital alternative to traditional fiat currencies. Today, there are thousands of different cryptocurrencies, each with its own unique features and use cases.
 
-### What is a cryptocurrency?
-A cryptocurrency is a digital asset that is stored on a blockchain.
+#### Cryptocurrency Wallet
+A cryptocurrency wallet is a software application that stores your digital assets. It is a secure way to store your cryptocurrencies, and you can use it to send and receive digital assets, as well as view your transaction history.
 
-### What is a cryptocurrency wallet?
-A cryptocurrency wallet is a software application that stores your cryptocurrency. It is a secure way to store your
-digital assets.
+#### Cryptocurrency Exchange
+A cryptocurrency exchange is a platform that allows you to buy and sell cryptocurrencies. These platforms connect buyers and sellers of digital assets and facilitate the trading process. Some popular examples include Binance, Coinbase and Kraken
 
-### What is a cryptocurrency exchange?
-A cryptocurrency exchange is a place where you can buy and sell cryptocurrencies. It is a place where you can buy and
-sell your digital assets.
+---
+### Project Methodologies
+In this project, I have used several different methods to build a functional blockchain. These include:
 
-### The list of methods I have used in this project are:
-1. __init__ - This method is used to initialize the class.
-2. **register_node** - This method is used to register a new node on the network.
-3. **valid_chain** - This method is used to validate the blockchain.
-4. **resolve_conflicts** - This method is used to resolve any conflicts that may occur.
-5. **new_block** - This method is used to create a new block.
-6. **new_transaction** - This method is used to create a new transaction.
-7. **last_block** - This method is used to get the last block.
-8. **hash** - This method is used to get the hash of the block.
-9. **proof_of_work** - This method is used to get the proof of work.
-10. **valid_proof** - This method is used to validate the proof of work.
-11. **mine** - This method is used to mine the block.
-12. **full_chain** - This method is used to get the full chain.
-13. **consensus** - This method is used to resolve any conflicts that may occur.
+1. init: Initializes the class.
+2. register_node: Registers a new node on the network.
+3. valid_chain: Validates the blockchain.
+4. resolve_conflicts: Resolves any conflicts that may occur.
+5. new_block: Creates a new block.
+6. new_transaction: Creates a new transaction.
+7. last_block: Gets the last block.
+8. hash: Gets the hash of the block.
+9. proof_of_work: Gets the proof of work.
+10. valid_proof: Validates the proof of work.
+11. mine: Mines the block.
+12. full_chain: Gets the full chain.
+13. consensus: Resolves any conflicts that may occur.
+
+---
+If you're interested in learning more about blockchain and how it works, I encourage you to explore this project and see how these methods work together to create a functional blockchain.
